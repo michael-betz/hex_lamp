@@ -1,7 +1,7 @@
 # hex_lamp
 Geometric lamp casting wild shadows
 
-## Firmware
+## firmware
 Based on 3 perlin noise generators doing a slow random walk, controlling H, S and V of each LED.
 
   * Install [PlatformIO](https://platformio.org/) 
@@ -46,3 +46,22 @@ Uploading .pio/build/hexlamp/firmware.bin
 esptool.py v2.8
 ...
 ```
+
+## hex_lamp_0
+Design files for the first hex_lamp as [featured](https://yetifrisstlama.github.io/hex-lamp/). The design needs to be cut from 1/4" thick material.
+
+  * `.svg` files are the original Inkscape artworks 
+  * `.dxf` files are ready to be sent to the laser cutter
+  * `joiner.stl` is the 3D printable joiner piece
+
+## `template/hex_lamp.scad`
+Parametric model of the lamp in Openscad.
+Most important parameters:
+
+  * `a`: side length of the square piece, determining the size of the lamp 
+  * `t_sheet`: material thickness
+
+Uncomment the entries at the bottom to export:
+
+  * `2D outlines` of the square and hex piece, with mounting holes
+  * `3D .stl file` of the joiner piece
