@@ -1,6 +1,8 @@
 # hex_lamp
 Geometric lamp casting wild shadows. [See also this blog post.](https://yetifrisstlama.github.io/hex-lamp/)
 
+![hex_lamp shadows](https://yetifrisstlama.github.io/uploads/hex_lamp/IMG_20200315_213407.jpg)
+
 ## firmware
 Based on 3 perlin noise generators doing a slow random walk, controlling H, S and V of each LED.
 
